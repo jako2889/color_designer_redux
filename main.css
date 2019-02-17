@@ -1,0 +1,41 @@
+body {
+  text-align: center;
+}
+label {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.5em;
+  padding: 1em;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.colorwrapper {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.colorBox {
+  width: 250px;
+  height: 250px;
+}
+button {
+  border-style: none;
+  padding: 1em;
+  cursor: pointer;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+button:hover {
+  opacity: 0.8;
+}
+input {
+  cursor: pointer;
+  border: none;
+  width: 5vw;
+  height: 2vw;
+}
+input:hover {
+  opacity: 0.8;
+}
