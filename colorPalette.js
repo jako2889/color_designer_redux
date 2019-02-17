@@ -8,8 +8,9 @@ function colorPicker(event) {
   const rgbcolor = convertHEXtoRGB(hexcolor);
   const hslcolor = convertRGBtoHSL(rgbcolor);
 
-  console.log(hexcolor);
-  console.log(rgbcolor);
+  console.log(`hex color er ${hexcolor}`);
+  console.log(`RGB color er ${rgbcolor}`);
+  console.log(`hsl color er ${hslcolor}`);
 
   setBaseColor(hslcolor);
   chooseTheme(hslcolor);
@@ -69,7 +70,7 @@ function convertRGBtoHSL(rgbcolor) {
   } else {
     s = (max - l) / Math.min(l, 1 - l);
   }
-  // multiply s and l by 100 to get the value in percent, rather than [0,1]
+
   s *= 100;
   l *= 100;
 
@@ -79,19 +80,19 @@ function convertRGBtoHSL(rgbcolor) {
 }
 
 function setBaseColor(hslcolor) {
-  document.getElementById("zero").style.backgroundColor = `hsl(${hslcolor.h},${
+  document.querySelector("#zero").style.backgroundColor = `hsl(${hslcolor.h},${
     hslcolor.s
   }%,${hslcolor.l}%`;
-  document.getElementById("one").style.backgroundColor = `hsl(${hslcolor.h},${
+  document.querySelector("#one").style.backgroundColor = `hsl(${hslcolor.h},${
     hslcolor.s
   }%,${hslcolor.l}%`;
-  document.getElementById("two").style.backgroundColor = `hsl(${hslcolor.h},${
+  document.querySelector("#two").style.backgroundColor = `hsl(${hslcolor.h},${
     hslcolor.s
   }%,${hslcolor.l}%`;
-  document.getElementById("three").style.backgroundColor = `hsl(${hslcolor.h},${
+  document.querySelector("#three").style.backgroundColor = `hsl(${hslcolor.h},${
     hslcolor.s
   }%,${hslcolor.l}%`;
-  document.getElementById("four").style.backgroundColor = `hsl(${hslcolor.h},${
+  document.querySelector("#four").style.backgroundColor = `hsl(${hslcolor.h},${
     hslcolor.s
   }%,${hslcolor.l}%`;
 }

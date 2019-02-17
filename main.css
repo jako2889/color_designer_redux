@@ -2,11 +2,9 @@ body {
   text-align: center;
 }
 label {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Coiny", cursive;
   font-size: 1.5em;
   padding: 1em;
-  font-weight: 600;
-  font-style: italic;
 }
 
 .colorwrapper {
@@ -26,6 +24,8 @@ button {
   cursor: pointer;
   margin-top: 2em;
   margin-bottom: 2em;
+
+  font-family: "Coiny", cursive;
 }
 button:hover {
   opacity: 0.8;
